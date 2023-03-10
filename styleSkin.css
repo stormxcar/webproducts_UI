@@ -25,6 +25,11 @@ body{
 .header_nav a{
     text-decoration: none;
     color : #555;
+    /* padding : 10px */
+}
+.header_nav a:hover{
+    color : green;
+    /* background-color: #f0f0f0; */
 }
 .web_header .header_profile{
     display : flex;
@@ -210,16 +215,22 @@ body{
 .product_cart{
     display : flex;
     align-items: center;
-    gap : 70px;
+    gap : 120px;
 }
-.product_cart span{
+.price_pros{
+    display : flex;
+}
+.price_pros span{
     font-size: 2em;
     font-weight: 700;
 }
-.product_cart h5{
+.price_pros h5{
     color : #969393;
     font-size: 16px;
     font-weight: 400;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
 }
 .product_cart .cart_icon{
     width: 30px;
@@ -235,10 +246,9 @@ body{
 }
 .count_product{
     display: flex;
-    /* gap: 20px; */
     align-items: center;
     justify-content: center;
-    margin: 50px;
+    margin: 80px;
 }
 .count_product span{
     color: green;
@@ -309,6 +319,7 @@ ul li a{
 }
 .footer_subs input::placeholder{
     color: #fff;
+    opacity: 0.8;
 }
 .footer_subs input:focus{
     color : #fff;
@@ -320,6 +331,9 @@ ul li a{
     color : #fff;
     background-color: rgb(65, 151, 65);
     font-weight: 700;
+}
+.subs_promos button:hover{
+    background-color: rgb(65, 190, 65);
 }
 .subs_social{
     display: flex;
@@ -357,4 +371,38 @@ ul li a{
 .subs_brand ul li:not(:first-child){
     list-style: disc;
 }
-
+.footer_email{
+    position: relative;
+}
+.footer_email .fa-envelope{
+    position : absolute;
+    top: 50%;
+    font-size: 18px;
+    color : #555;
+    transform:  translateY(-50%);
+    padding:0 15px;
+    color : #fff;
+    display: flex;
+    align-items : center;
+    justify-content : center;
+}
+.pro_search{
+    position : relative;
+}
+.pro_search .search{
+    width: 300px;
+    margin-right: 10px;
+}
+.pro_search .fa-magnifying-glass{
+    position : absolute;
+    top: 50%;
+    font-size: 18px;
+    color : #555;
+    transform:  translateY(-50%);
+    padding:0 15px;
+    color : #555;
+    display: flex;
+    align-items : center;
+    justify-content : center;
+    left: -5px
+}
